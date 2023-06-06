@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <LinearLayout
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:gravity="top|center"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/textView"
+            style="@android:style/TextAppearance.Material.Headline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="30dp"
+            android:text="Vücut Yağ Oranı Hesaplama"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:gravity="center">
+
+            <TextView
+                style="@android:style/TextAppearance.Material.Headline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Boy"
+                android:paddingTop="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <NumberPicker
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/heightPicker"
+                android:layout_marginHorizontal="5dp"/>
+
+            <TextView
+                style="@android:style/TextAppearance.Material.Headline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="cm"
+                android:paddingTop="10dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_marginStart="15dp"
+                style="@android:style/TextAppearance.Material.Headline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kilo"
+                android:paddingTop="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <NumberPicker
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/weightPicker"
+                android:layout_marginHorizontal="5dp"/>
+
+            <TextView
+                style="@android:style/TextAppearance.Material.Headline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="kg"
+                android:paddingTop="10dp"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center">
+        <TextView
+            style="@android:style/TextAppearance.Material.Headline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Boyun Çevresi"
+            android:paddingTop="10dp"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <NumberPicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/neckPicker"
+            android:layout_marginHorizontal="5dp"/>
+
+        <TextView
+            style="@android:style/TextAppearance.Material.Headline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cm"
+            android:paddingTop="10dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_marginStart="15dp"
+            style="@android:style/TextAppearance.Material.Headline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bel Çevresi"
+            android:paddingTop="10dp"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <NumberPicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/waistPicker"
+            android:layout_marginHorizontal="5dp"/>
+
+        <TextView
+            style="@android:style/TextAppearance.Material.Headline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cm"
+            android:paddingTop="10dp"
+            android:textSize="20sp" />
+
+
+
+    </LinearLayout>
+
+
+        <RadioGroup
+            android:id="@+id/genderRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/maleRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Erkek" />
+
+            <RadioButton
+                android:id="@+id/femaleRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kadın" />
+        </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/bodyFat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="0dp"
+        android:text="Vücut Yağ Oranınız:"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
+
+
